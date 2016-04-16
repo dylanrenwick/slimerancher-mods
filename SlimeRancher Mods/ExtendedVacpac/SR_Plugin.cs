@@ -21,7 +21,7 @@ namespace ExtendedVacpac
 
         public static void Load(GameObject go)
         {
-            
+            go.AddComponent<ExtendedVacpac>();
         }
 
         public static void Unload(GameObject go)
