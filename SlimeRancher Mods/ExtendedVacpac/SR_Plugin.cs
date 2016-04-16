@@ -19,8 +19,13 @@ namespace ExtendedVacpac
             DEPENDENCIES = new List<Plugin_Dependency>() { },
         };
 
-        public static void Load(GameObject go)
+        public static void Load(Plugin plugin, GameObject go)
         {
+            PlayerUpgrade powerCore4 = new PlayerUpgrade(plugin, "power_core_mk_4", 1500, "Power Core Mk IV", "", ((GameObject obj) => 
+            {
+                Player.MaxEnergy += 50;
+            }));
+
             go.AddComponent<ExtendedVacpac>();
         }
 
