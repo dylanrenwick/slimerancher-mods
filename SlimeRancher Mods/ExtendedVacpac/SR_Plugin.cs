@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace SR_Plugin_Namespace
+namespace ExtendedVacpac
 {
 
     // Please note that this project references assemblies located in the SlimeRancher game folder, specifically the default location for the steam version on windows.
